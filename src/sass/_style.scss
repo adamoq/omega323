@@ -1,0 +1,226 @@
+:root {
+    --accent-color:#e62228;
+}
+.ox-brief__menu--active {
+  opacity: 1;
+}
+
+body {
+  max-height: 100%;
+  font-family: 'Lato', sans-serif;
+  bottom: -200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.purina{
+
+&__menu{
+	width: 15%;
+	height: 100%;
+	float: left;	
+	&--item{
+		padding-left: 40px;
+		margin: 22px 0;
+		a{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 14px;
+			color: #000;
+		}
+	
+	}
+	&--image{
+		width: 100%;
+		height: 160px;
+		border-bottom: 1px solid #ccc;
+		text-align:center;
+		padding: 30px 0;
+		img {
+		max-height: 130px;
+		height: 70%;
+	}
+	}
+	@include media($smBreakpoint) {
+		width: 100%;
+		display: none;
+		
+	}
+}
+&__main{
+	&-container{
+	
+	float: left;
+	width: 85%;
+	color: #fff;
+	h2{	
+			height: 40px;
+			font-size: 39px;
+			font-weight: 500;
+			margin: 5px 0 30px 0; 
+		}
+		p{	
+			height: auto;
+			font-size: 24px;
+			font-weight: 300;
+			margin-bottom: 20px;
+		}
+		@include media($smBreakpoint) {
+			width: 100%;
+		}
+	}
+	
+	&--section0{
+		padding: 160px 60px;
+		float: left;
+		background-color: #469da7;
+		width: 30%;
+		text-align: left;
+		height: 700px;
+		@include media($smBreakpoint) {
+		width: 100%;
+		height: auto;
+		padding: 90px 20px;
+	}
+	}
+	&--section1{
+		padding: 160px 0;
+		float: left;
+		width: 70%;
+		background-color: #62acb4;
+		background-image: url("/images/phone.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 400px;
+		height: 700px;
+		font-size: 20px;
+		&--socials{
+			position: absolute;
+			right: 30px;
+			top: 30px;
+			
+		}
+		&--text{
+		font-weight: 300;
+		 width: 17%;		 
+		 height: auto;
+		 position: absolute;		
+		 &:nth-of-type(2), &:nth-of-type(4){
+		 right: 40%;
+		 }
+		 &:nth-of-type(3),&:nth-of-type(5){		
+		 right: 30px;
+		 }
+		&:nth-of-type(2), &:nth-of-type(3){
+		 top: 30%;		 
+		 }		 
+		
+		 &:nth-of-type(4), &:nth-of-type(5) {			
+			top: 50%;
+		 } 
+		 
+		 @include media($smBreakpoint) {
+		position: relative;
+		right: unset!important;
+		top: unset!important;
+		left: 0;
+		width: 70%;
+		margin-bottom: 30px;
+	}
+		}
+		
+		@include media($smBreakpoint) {
+		width: 100%;
+		background-position: right;
+		height: 500px;
+		padding: 60px 10px;
+	}
+		
+	}
+	&--section2{
+		display: inline-block;
+		min-height: 700px;
+		width: 100%;
+		//background-image: url("/images/cat-background.png");
+		color: #000;
+		&--button{
+			margin-left: 60px;
+			padding: 10px 40px;
+			background-color: #469da7;
+			font-size: 18px;
+			color: #fff;
+			position: relative;
+			top: -450px;
+			text-decoration: none;
+			text-transform: uppercase;
+			@include media($smBreakpoint) {
+		top: -250px;
+	}
+		}
+		h2,p{
+		margin-left: 60px;
+		max-width: 30%;
+		position: relative;
+		top: -500px;
+		@include media($smBreakpoint) {
+		top: -280px;
+	}
+		}
+		img{
+			position: relative;
+			z-index: -1;
+			width: 100%;
+			@include media($smBreakpoint) {
+		width: unset;
+		height: 300px;
+	}
+		}
+		@include media($smBreakpoint) {
+		width: 100%;
+		height: 300px;
+	}
+	}
+	&--section3{
+	
+	position: relative;
+	top: -170px;
+	background-color: #373a3b;
+	padding: 30px 60px;
+	height: 100px;	
+	text-transform: uppercase;
+	font-size: 14px;
+	img {
+		float: left;
+		height: 40px;
+	}
+	p {
+		float: left;
+		height: 50px;
+		font-size: 14px;
+		line-height: 16px;
+		margin: 5px 0 0 30px;
+		
+	}
+	a {
+		float: right;
+		font-size: 14px;
+		text-decoration: none;
+		color: #fff;
+		margin: 10px 0;
+		padding-right: 15px;padding-left: 15px;
+		&:nth-of-type(2),&:nth-of-type(3){
+			border-right: 1px solid #fff;
+		}
+	}
+	@include media($smBreakpoint) {
+		width: 100%;
+	}
+	}
+}
+}

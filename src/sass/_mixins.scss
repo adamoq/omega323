@@ -1,0 +1,17 @@
+// ** Media queries mixins
+
+$bigScreen: "(max-width:1650px)";
+$aboveBigScreen: "(min-width:1600px)";
+$macOs: "(max-width:1450px)";
+$belowMacOs: "(max-width:1449px)";
+$belowNotebook: "(max-width:1366px)";
+$belowNotepad: "(max-width:1200px)";
+$smBreakpoint: "(max-width:991px)";
+$mobile: "(max-width: 768px)";
+$mini: "(max-width:550px)";
+$miniXS: "(max-width:450px)";
+@mixin media($media) {
+  @media only screen and #{$media} {
+    @content;
+  }
+}
